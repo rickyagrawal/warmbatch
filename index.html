@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warm Batch</title>
+    <title>Warm Batch Holdings</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="cookie">🍪</div>
-        <h1>Warm Batch</h1>
-        <p>Fresh from the oven</p>
-        <div class="steam">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
+    <main class="site">
+        <p class="name">Warm Batch Holdings</p>
+        <p class="line">Crumbl Cookie franchise operator.</p>
+        <p class="location">Houston, Texas</p>
+    </main>
 <script>fetch("/release.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;var e=document.createElement("div");e.style="position:fixed;bottom:6px;left:6px;font:11px system-ui;color:#8b7a60;background:rgba(245,230,211,.85);border:1px solid #d8c4a8;padding:2px 6px;border-radius:6px";var t=d.deployed_at?new Date(d.deployed_at).toLocaleString():"";e.textContent=(d.commit||"").slice(0,7)+" \u2022 "+t;document.body.appendChild(e)}).catch(()=>{});</script>
 </body>
 </html>
