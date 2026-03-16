@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warm Batch</title>
+    <title>Warm Batch - Something Sweet is Baking in Houston</title>
+    <meta name="description" content="Warm Batch is coming to Houston, Spring 2026. Something sweet is baking.">
+    <meta name="theme-color" content="#d4a574">
+    <meta property="og:title" content="Warm Batch - Something Sweet is Baking in Houston">
+    <meta property="og:description" content="Something sweet is baking in Houston. Spring 2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://warmbatch.com/">
+    <meta property="og:site_name" content="Warm Batch">
+    <meta property="og:locale" content="en_US">
+    <link rel="canonical" href="https://warmbatch.com/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍪</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="cookie">🍪</div>
+    <main class="container">
+        <div class="cookie" aria-hidden="true">🍪</div>
         <h1>Warm Batch</h1>
         <p class="tagline">Something sweet is baking in Houston</p>
-        <p class="soon">Spring 2026</p>
-        <div class="steam">
+        <p class="soon"><time datetime="2026-03">Spring 2026</time></p>
+        <div class="steam" aria-hidden="true">
             <span></span>
             <span></span>
             <span></span>
         </div>
-    </div>
-<script>fetch("/release.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;var e=document.createElement("div");e.style="position:fixed;bottom:6px;left:6px;font:11px system-ui;color:#8b7a60;background:rgba(245,230,211,.85);border:1px solid #d8c4a8;padding:2px 6px;border-radius:6px";var t=d.deployed_at?new Date(d.deployed_at).toLocaleString():"";e.textContent=(d.commit||"").slice(0,7)+" \u2022 "+t;document.body.appendChild(e)}).catch(()=>{});</script>
+    </main>
+    <script src="release.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
 
 body {
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +14,7 @@ body {
     font-family: Quicksand, ui-sans-serif, system-ui, -apple-system, sans-serif;
     font-size: 17px;
     line-height: 1.55;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -42,7 +43,7 @@ h1 {
 
 .tagline {
     font-size: 1.1rem;
-    color: #7a5a3e;
+    color: #5c3d2e;
     margin-top: 0.6rem;
 }
 
@@ -52,7 +53,6 @@ h1 {
     letter-spacing: 0.08em;
     color: #5c3d2e;
     margin-top: 0.8rem;
-    opacity: 0.7;
 }
 
 .steam {
@@ -97,5 +97,26 @@ h1 {
     100% {
         opacity: 0;
         transform: translateY(-80px) scaleX(2);
+    }
+}
+
+.deploy-badge {
+    position: fixed;
+    bottom: 6px;
+    left: 6px;
+    font: 11px system-ui;
+    color: #5c4a35;
+    background: #f5e6d3;
+    border: 1px solid #d8c4a8;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cookie, .steam span {
+        animation: none;
+    }
+    .steam {
+        display: none;
     }
 }
