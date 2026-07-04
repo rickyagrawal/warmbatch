@@ -118,7 +118,7 @@ nav a {
     inset: 0;
     background:
         linear-gradient(90deg, rgba(35, 22, 18, 0.82) 0%, rgba(35, 22, 18, 0.68) 37%, rgba(35, 22, 18, 0.18) 68%),
-        url("assets/crumbl-catering-hero.webp") center / cover no-repeat;
+        url("assets/crumbl-branded-catering-hero.webp") center / cover no-repeat;
     transform: scale(1.02);
 }
 
@@ -462,7 +462,7 @@ footer p {
     .hero-bg {
         background:
             linear-gradient(90deg, rgba(35, 22, 18, 0.86), rgba(35, 22, 18, 0.46)),
-            url("assets/crumbl-catering-hero.webp") center right 38% / cover no-repeat;
+            url("assets/crumbl-branded-catering-hero.webp") center right 38% / cover no-repeat;
     }
 
     .quick-strip,
