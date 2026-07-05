@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://houstoncookiecatering.com/sitemap.xml
